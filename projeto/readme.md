@@ -19,3 +19,9 @@ pronto
 na url /admin, entre com seu superuser e administre seu sistema 
 
 python manage.py startapp core (esse comando cria mini aplicações dentro do seu sistema, no caso do "app")
+
+python manage.py makemigrations - cria como o banco de dados deve ser criado la no arquivo migrations/0001_initial.py 
+
+python manage.py migrate  - efetivamente cria o core.0001_initial na aplicação
+
+

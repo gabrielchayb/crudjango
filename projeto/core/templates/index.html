@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Hello, World!</h1>
+        <ul>
+            {% for pessoa in pessoas %}
+                <li>{{ pessoa.id }} - {{ pessoa.nome }}</li>
+                <li>{{ pessoa.idade }}</li>
+                <li>{{ pessoa.email }}</li>
+            {% endfor %}    
+        </ul>
+
+        <form action="{% url 'salvar' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="idade" placeholder="idade">
+            <input type="text" name="email" placeholder="email">
+            <button type="submit">Salvar</button>
+        </form>
+            
+    </body>
+    </html> 
+</body>
+</html>
