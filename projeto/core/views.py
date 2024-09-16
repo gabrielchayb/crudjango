@@ -15,4 +15,15 @@ def salvar(request):
     pessoas = Pessoa.objects.all()
     return render(request, "index.html", {'pessoas': pessoas})  
 
+def editar(request, id):
+    pessoa = Pessoa.objects.get(id=id)
+    return render(request, 'update.html', {'pessoa': pessoa})
 
+def update(request, id):
+    pessoa = Pessoa.objects.get(id=id)
+    pessoa.nome = request.POST.get('nome')
+    pessoa.email = request.POST.get('email')
+    pessoa.idade = request.POST.get('idade')
+    pessoa.save()
+    pessoas = Pessoa.objects.all()
+    return render(request, 'index.html', {'pessoas': pessoas})
