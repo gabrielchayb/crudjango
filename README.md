@@ -1,3 +1,20 @@
+Sobre o Projeto
+
+Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido utilizando o framework Django e o banco de dados PostgreSQL. Seu objetivo é gerenciar informações de pessoas de forma simples e eficiente, permitindo a criação, leitura, atualização e exclusão de registros.
+
+Funcionalidades Principais:
+
+	•	Cadastro de Pessoas: Inclui campos como nome, e-mail, telefone e data de nascimento.
+	•	Listagem de Pessoas: Exibe uma tabela com os registros cadastrados, permitindo filtragem e ordenação.
+	•	Atualização de Registros: Permite a edição de dados existentes de forma intuitiva.
+	•	Exclusão de Registros: Facilita a remoção de registros de pessoas do sistema com confirmação de segurança.
+
+Tecnologias Utilizadas:
+
+	•	Django: Framework web robusto e escalável, utilizado para desenvolvimento rápido e seguro.
+	•	PostgreSQL: Sistema de gerenciamento de banco de dados relacional, conhecido por sua confiabilidade e desempenho.
+	•	HTML/CSS/JavaScript: Para a interface do usuário e funcionalidades interativas.
+
 python -m venv venv
 source venv/bin/activate
 (venv) pip install django 
